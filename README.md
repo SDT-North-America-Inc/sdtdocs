@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/theme-docs.svg" alt="A illustration of file that is the @rocketseat/gatsby-theme-docs logo" width="100">
+  <img src="https://sdt.media/upload/2017/09/13/20170913190125-d2d35da3.png" alt="A illustration of file that is the @rocketseat/gatsby-theme-docs logo" width="100">
 </p>
 
 <h2 align="center">
