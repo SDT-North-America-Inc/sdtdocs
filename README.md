@@ -1,24 +1,15 @@
 <p align="center">
-  <img src="https://sdt.media/upload/2017/09/13/20170913190125-d2d35da3.png" alt="A illustration of file that is the @rocketseat/gatsby-theme-docs logo" width="100">
+  <img src="https://sdt.media/_data/i/upload/2017/09/13/20170913190127-ad477862-me.png" alt="SDT Ultrasound Solutions" width="300">
 </p>
 
 <h2 align="center">
-  Gatsby Starter: Rocket Docs
+  SDT Ultrasound Solutions Documentation
 </h2>
 
 <p align="center">
-  Out of the box Gatsby Starter for creating documentation websites easily and quickly. With support for MDX, code highlight, Analytics, SEO and more 🔥 Using the theme: <a href="https://github.com/Rocketseat/gatsby-themes/tree/main/%40rocketseat/gatsby-theme-docs">@rocketseat/gatsby-theme-docs</a>
+  Built with Gatsby jS starter Rocket-docs
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PRs-welcome-%238257E6.svg" alt="PRs welcome!" />
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%238257E6">
-
-  <a href="https://twitter.com/intent/follow?screen_name=rocketseat">
-    <img src="https://img.shields.io/twitter/follow/rocketseat.svg?label=Follow%20@rocketseat" alt="Follow @rocketseat" />
-  </a>
-</p>
 
 ## 🚀 Features
 
@@ -33,29 +24,4 @@
 - ⚡️ Offline Support & WebApp Manifest;
 - and much more 🔥
 
-## ⚡️ Getting started
 
-1. Create the website.
-
-   ```sh
-   npx gatsby new rocket-docs https://github.com/rocketseat/gatsby-starter-rocket-docs
-   ```
-
-2. Start developing.
-
-   ```sh
-   cd rocket-docs
-   gatsby develop
-   ```
-
-3. Are you ready for launch?
-
-   Your site is now running at `http://localhost:8000`
-
-## 📄 Docs
-
-Looking for docs? Check our live demo and documentation [website](https://rocketdocs.netlify.app).
-
----
-
-Made with 💜 by Rocketseat :wave: [check our community!](https://discordapp.com/invite/gCRAFhc)
