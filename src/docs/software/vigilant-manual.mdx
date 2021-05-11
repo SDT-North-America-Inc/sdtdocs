@@ -1,0 +1,120 @@
+---
+title: Vigilant Manual
+description: Vigilant User Manual
+version: 1.0
+---
+
+## System Description
+### Introduction
+Vigilant Online Machinery Supervisor is a state-of-the-art monitoring system whose purpose is to provide users with the measurements required for assessing the condition of the machinery or equipment being monitored.
+Vigilant is a smart solution for protection, condition monitoring and failure mode identification of critical machinery. It can work as a standalone system, It does not require a permanent connection to a computer or software, while still measuring and protecting the equipment, storing data or even communicating scalar measurements to other systems via Modbus-TCP protocol.
+It accepts both static and dynamic signals from most kinds of sensors typically used for condition-based monitoring: vibration, temperature, ultrasound, thermal images, video, speed, motor current, oil condition parameters, load, process, etc.
+Vigilant is a small size and low consumption hardware device. It integrates a web server that provides an interface for users through a web browser, without installing any software. With that web interface the user can configure and access all data being measured in the unit, along with all the types of graphs required for its visualization and analysis (trends, spectrum, waveform, parameter tables, etc.). It also provides data storage with enough capacity for enabling monitoring of extended periods. The advantages of this new technology are:
+ - It eliminates the need for a local server, and therefore its maintenance is also eliminated.
+ - It can be connected directly to the Internet, so the measurements can be accessed from any part of the world using a computer or device connected to the Internet and a web browser.
+ - It is not required to pay for software licenses to access the data.
+ - Access is not limited to several computers or devices.
+ - Obsolescence is avoided by applying automatic updates.
+ - It is very intuitive, accelerating the learning curve and allowing users to access all the start functionality.
+ - Reduce the initial investment by simplifying the monitoring system.
+ - The system includes 8 analog inputs with simultaneous high-frequency sampling. V8-L version adds 4 additional low-frequency sampling analog inputs.
+ - Vigilant also includes bidirectional communication via Modbus-TCP protocol for its integration with external systems.
+
+## Design
+### External appearance
+In the front and back sides of the Vigilant several pluggable terminal blocks allow connecting wires both for sensor signals and power supply. All these terminals are to be connected only to SELV-LPS (safety low-voltage) lines.
+Vigilant also has an RJ45 jack port on the left part of the case’s front for Ethernet communications (100Base-TX). The Ethernet port is to be connected only to indoor routed networks.
+Next to the RJ45 port, a USB connector (A-type) plugs a slave device. This port is not implemented yet and cannot be used.
+On the top of the instrument, several LED indicators give information about the device’s state and the signals being read.
+The following chapters contain some images with more detailed information about the Vigilant and its hardware.
+
+### Standard model
+The Permanent or -P version of the Vigilant has 8 main inputs (high-speed) and 4 additional auxiliary inputs, for static analog sensors or tachometers. 
+
+![Standard Model - 8 main inputs](../../static/6-1-1-a.png)
+
+### Indicators
+The following table describes the light indications (LEDs) available in the system:
+
+| LED | Color status | Description |
+| --- | --- | --- |
+| Status | White | Entering power-up or power-down stage. |
+| | Blinking blue | Unit starting or shutting down in normal mode |
+| | Blinking red | Unit starting or shutting down in rescue mode |
+| | Solid blue | Unit is on and ready. Power supply is ok. |
+| | Solid red | Unit is in rescue mode. |
+| Ethernet connector |	Yellow or green | Link/Activity |
+| Input ports (Any type) | Off | The input channel is either disabled, or if enabled, it is processing the sampling data. |
+| | Green | Channel is measured, and no alarm is detected for all the measurements done on the channel. |
+| | Orange | Channel is measured and at least one of the measurements of the channel is in warning or alert condition. |
+| | Red | Channel is measured and at least one of the measurements of the channel is in alarm or fault condition. |
+| Output ports | Off | Output is disabled. Output terminals are in the default state (inactive). |
+| | Green | Output is enabled. Output terminals are in the non-default state (active). |
+| | Red | (Only for current outputs) Output is enabled but the system is not able to configure the current setting because it is not powered. |
+
+## Specifications
+###	Vigilant-Permanent
+The following table shows the specifications for the large version of the Vigilant device:
+
+***High Speed Inputs*** 
+
+| Number of high-speed inputs | 8 |
+| --- | --- |
+| HS Inputs sampling rate | 512 to 51200 Hz |
+| DC Range | ±24 V |
+| AC Range | 24 Vpp |
+| IEPE Sensors drive current | 5.5mA @20V |
+| Resolution | 16 bits |
+| Input configuration modes | Dynamic, Static, Digital, Pulse Train |
+| Harmonic distortion | -70 dB |
+| Accuracy | 1% |
+| Dynamic range | 110 dB |
+| Point types | Dynamic, Static, Tachometer |
+
+***Auxiliary Inputs***
+
+| Number of auxiliary inputs | 4 |
+| --- | --- |
+| LS Inputs sampling rate | Up to 200 Hz (1 sample for each capture) |
+| DC Range | ±24 V |
+| Resolution | 16 bits |
+| Power output | +24 V |
+| Input configuration modes | Static, Digital, Pulse Train (A1 and A2 only) |
+| Accuracy | 1% |
+| Point types | Static, Tachometer |
+
+***Signal Processing***
+
+| Spectral lines (bins) | 100, 200, 400, 800, 1600, 3200, 6400, 12800 |
+| --- | --- |
+| Time waveform samples | 128 up to 262016 |
+| Window types | Hann, Hamming, Blackman, Rectangular |
+| Processing modes | Waveform, Spectrum & Waveform, Demodulation, Long Waveform, Demodulation, Long-Waveform |
+| Filter types | Butterworth, Bessel, Chebyshev |
+| Number of averages | 1 up to 32 |
+| Overlap | 0% up to 99% |
+
+***System General Features***
+
+| Internal Storage (OS) | 4 GB |
+| --- | --- |
+| Main CPU | ARM Cortex™-A9 Quad Core (NVIDIA® Tegra™ 3) |
+| CPU clock | 1.4 GHz |
+| RAM | 1 GB |
+| Storage Capacity (Database) | 4 GB |
+| USB ports | 1 Host |
+| Internal Storage (OS) | 4 GB |
+| Status indicator | RGB LED |
+| Analog channels indicator | 12x Red/Green LEDs |
+| Network communication	IEEE1588 | Ethernet 10/100 |
+| Power Supply | 20-26 Vdc, 24 Vdc nominal |
+| vPower consumption | < 12 W |
+
+***Mechanical Features***
+
+| Mounting | Standard 35 mm DIN rail |
+| --- | --- |
+| Size | 162.2x95x27 mm |
+| Weight | 0.55 Kg |
+| Temperature range | -30 to +44.5 °C |
+| Humidity | 95% RH |
