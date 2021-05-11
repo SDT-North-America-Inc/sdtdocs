@@ -11,7 +11,12 @@
 - label: Software
   items:
     - label: 'Vigilant'
+    items:
+    - label: 'Dashboard'
       link: '/software/vigilant-dashboard'
+    items:
+    - label: 'Vigilant Manual'
+      link: '/software/vigilant-manual'
 - label: Usage
   items:
     - label: 'Creating docs'
