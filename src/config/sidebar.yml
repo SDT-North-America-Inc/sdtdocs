@@ -8,6 +8,10 @@
   items:
     - label: 'SDT340'
       link: '/hardware/sdt340'
+- label: Software
+  items:
+    - label: 'Vigilant'
+      link: '/software/vigilant-dashboard'
 - label: Usage
   items:
     - label: 'Creating docs'
