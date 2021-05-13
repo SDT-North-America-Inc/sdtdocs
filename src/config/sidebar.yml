@@ -4,19 +4,20 @@
   link: '/'
 - label: 'Getting started'
   link: '/getting-started'
-- label: Hardware
+- label: SDT340
   items:
-    - label: 'SDT340'
+    - label: 'User Manual'
       link: '/hardware/sdt340'
-- label: Software
+- label: Vigilant
   items:
-    - label: 'Vigilant'
-    items:
     - label: 'Dashboard'
-      link: '/software/vigilant-dashboard'
-    items:
-    - label: 'Vigilant Manual'
-      link: '/software/vigilant-manual'
+      link: '/software/vigilant/vigilant-dashboard'
+    - label: 'User Manual'
+      link: '/software/vigilant/vigilant-manual'
+- label: Sonavu
+  items:
+    - label: 'User Manual'
+      link: '/hardware/sonavu/sonavu-manual'
 - label: Usage
   items:
     - label: 'Creating docs'
